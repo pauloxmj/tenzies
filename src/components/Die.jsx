@@ -10,6 +10,8 @@ export default function Die({ value, isHeld, hold }) {
     className={styles.dice} 
     style={style}
     onClick={hold}
+    aria-label={`Die with value ${value}, 
+    ${isHeld ? "held" : "not held"}`}
     >
       {value}
     </button>
